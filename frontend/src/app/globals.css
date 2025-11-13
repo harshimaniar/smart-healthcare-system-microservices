@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Apply vars as classes, not on body */
+body {
+  @apply bg-white text-black transition-colors duration-300;
+  font-family: 'Inter', sans-serif;
+}
